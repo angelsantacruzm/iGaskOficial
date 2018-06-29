@@ -541,17 +541,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXJ-CD-7fr">
-                                <rect key="frame" x="16" y="323" width="343" height="143"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFq-Fc-sJU">
+                                <rect key="frame" x="16" y="317" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqG-d6-uDo">
-                                <rect key="frame" x="16" y="474" width="343" height="46"/>
+                                <rect key="frame" x="16" y="453" width="343" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -560,14 +560,14 @@
                         <viewLayoutGuide key="safeArea" id="uMh-Uf-sZz"/>
                     </view>
                     <connections>
-                        <outlet property="descriptionTxtLabel" destination="SXJ-CD-7fr" id="NS3-7P-fAH"/>
+                        <outlet property="descriptionTxtLabel" destination="gFq-Fc-sJU" id="Ebs-cB-C0A"/>
                         <outlet property="nameTxtLabel" destination="62a-87-OLv" id="uAo-td-FTr"/>
                         <outlet property="phoneTxtLabel" destination="kqG-d6-uDo" id="3z0-3k-1cV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kug-TN-xc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="-2482"/>
+            <point key="canvasLocation" x="1640.8" y="-2482.3088455772117"/>
         </scene>
         <!--Sale View Controller-->
         <scene sceneID="mqR-pT-EGU">

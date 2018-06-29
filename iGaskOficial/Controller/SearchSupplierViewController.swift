@@ -50,6 +50,7 @@ class SearchSupplierViewController: UIViewController, UITableViewDelegate, UITab
                 let supplier = SupplierModel()
                 supplier.name = dictionary["name"] as! String
                 supplier.description = dictionary["description"] as! String
+                supplier.phone = dictionary["phone"] as! String
                 self.supplierDataAux.append(supplier)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
@@ -89,7 +90,9 @@ class SearchSupplierViewController: UIViewController, UITableViewDelegate, UITab
             let categoryselected = supplierDataAux[selectedRow]
             
             let guest = segue.destination as! SupplierDetailViewController
-            guest.name = categoryselected as? String
+            guest.name = categoryselected.name
+            guest.Description = categoryselected.description
+            guest.Phone = categoryselected.phone
         }
     }
 

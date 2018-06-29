@@ -20,18 +20,25 @@ class SupplierDetailViewController: UIViewController {
     }
     
     var name = String()
+    var Description = String()
+    var Phone = String()
     @IBOutlet weak var nameTxtLabel: UILabel!
-    @IBOutlet weak var descriptionTxtLabel: UILabel!
+    @IBOutlet weak var descriptionTxtLabel: UITextView!
     @IBOutlet weak var phoneTxtLabel: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTxtLabel.text! = name
+        load()
         // Do any additional setup after loading the view.
     }
     
+    func load(){
+        nameTxtLabel.text! = name
+        descriptionTxtLabel.text! = Description
+        phoneTxtLabel.text! = Phone
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
