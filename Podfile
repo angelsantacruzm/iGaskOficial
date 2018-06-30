@@ -12,6 +12,7 @@ pod 'Firebase/Database'
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'GoogleMaps'
+pod 'FirebaseAuth'
 
   target 'iGaskOficialTests' do
     inherit! :search_paths

@@ -17,7 +17,7 @@ class SearchSupplierViewController: UIViewController, UITableViewDelegate, UITab
 
     var ref:DatabaseReference?
     var databaseHandle: DatabaseHandle?
-    var supplierData = [String]()
+    //var supplierData = [String]()
     var supplierDataAux = [SupplierModel]()
     
     override func viewDidLoad() {

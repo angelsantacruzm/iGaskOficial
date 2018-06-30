@@ -32,7 +32,6 @@ class SupplierDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         load()
-        
         // Do any additional setup after loading the view.
     }
     
@@ -47,12 +46,17 @@ class SupplierDetailViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let guest = segue.destination as! MapLocationViewController
-        guest.latitudeMapLoc = latitudeMap
-        guest.longitudMapLoc = longitudeMap
+        if segue.identifier == "segueShowMap"{
+            let guest = segue.destination as! MapLocationViewController
+            guest.latitudeMapLoc = latitudeMap
+            guest.longitudMapLoc = longitudeMap
+        }
     }
     
 
+    @IBAction func sendButton(_ sender: Step1toBuyViewController) {
+        performSegue(withIdentifier: "showBuy", sender: self)
+    }
     /*
     // MARK: - Navigation
 

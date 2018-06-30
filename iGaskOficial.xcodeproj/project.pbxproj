@@ -33,6 +33,10 @@
 		A4614A4A20E6570C005EC6E0 /* SearchSupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4920E6570C005EC6E0 /* SearchSupplierViewController.swift */; };
 		A4614A4C20E67AB2005EC6E0 /* SupplierDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */; };
 		A4614A5020E70B90005EC6E0 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */; };
+		A4614A5220E731C8005EC6E0 /* Step1toBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A5120E731C8005EC6E0 /* Step1toBuyViewController.swift */; };
+		A4614A5420E76B67005EC6E0 /* OrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A5320E76B67005EC6E0 /* OrderDetailViewController.swift */; };
+		A4614A5D20E792E5005EC6E0 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A5C20E792E5005EC6E0 /* ConfirmationViewController.swift */; };
+		A4614A5F20E7A678005EC6E0 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A5E20E7A678005EC6E0 /* LogInViewController.swift */; };
 		A46BCB7320E1E6BB00C8E0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BCB7220E1E6BB00C8E0E5 /* AppDelegate.swift */; };
 		A46BCB7820E1E6BB00C8E0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BCB7620E1E6BB00C8E0E5 /* Main.storyboard */; };
 		A46BCB7A20E1E6BB00C8E0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46BCB7920E1E6BB00C8E0E5 /* Assets.xcassets */; };
@@ -89,6 +93,10 @@
 		A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierDetailViewController.swift; sourceTree = "<group>"; };
 		A4614A4E20E6FD3D005EC6E0 /* iGaskOficial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iGaskOficial.entitlements; sourceTree = "<group>"; };
 		A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
+		A4614A5120E731C8005EC6E0 /* Step1toBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1toBuyViewController.swift; sourceTree = "<group>"; };
+		A4614A5320E76B67005EC6E0 /* OrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewController.swift; sourceTree = "<group>"; };
+		A4614A5C20E792E5005EC6E0 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		A4614A5E20E7A678005EC6E0 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A46BCB6F20E1E6BB00C8E0E5 /* iGaskOficial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGaskOficial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BCB7220E1E6BB00C8E0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46BCB7720E1E6BB00C8E0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -159,6 +167,10 @@
 				A4614A4920E6570C005EC6E0 /* SearchSupplierViewController.swift */,
 				A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */,
 				A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */,
+				A4614A5120E731C8005EC6E0 /* Step1toBuyViewController.swift */,
+				A4614A5320E76B67005EC6E0 /* OrderDetailViewController.swift */,
+				A4614A5C20E792E5005EC6E0 /* ConfirmationViewController.swift */,
+				A4614A5E20E7A678005EC6E0 /* LogInViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +426,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iGaskOficial/Pods-iGaskOficial-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -422,6 +435,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -514,6 +528,7 @@
 				A4614A2220E2CC17005EC6E0 /* SalesModel.swift in Sources */,
 				A4614A3820E622ED005EC6E0 /* CustomerViewController.swift in Sources */,
 				A4614A2A20E2D891005EC6E0 /* ProductRepository.swift in Sources */,
+				A4614A5D20E792E5005EC6E0 /* ConfirmationViewController.swift in Sources */,
 				A46BCB7320E1E6BB00C8E0E5 /* AppDelegate.swift in Sources */,
 				A4614A4C20E67AB2005EC6E0 /* SupplierDetailViewController.swift in Sources */,
 				A4614A3220E5AE95005EC6E0 /* OrderViewController.swift in Sources */,
@@ -533,6 +548,9 @@
 				A4614A3020E2ECE7005EC6E0 /* OrderRepository.swift in Sources */,
 				A4614A3A20E629D1005EC6E0 /* BrandModel.swift in Sources */,
 				A4614A3420E5B489005EC6E0 /* CustomerModel.swift in Sources */,
+				A4614A5420E76B67005EC6E0 /* OrderDetailViewController.swift in Sources */,
+				A4614A5F20E7A678005EC6E0 /* LogInViewController.swift in Sources */,
+				A4614A5220E731C8005EC6E0 /* Step1toBuyViewController.swift in Sources */,
 				A4614A2620E2CFC2005EC6E0 /* SaleViewController.swift in Sources */,
 				A4614A4620E6425D005EC6E0 /* SearchCell.swift in Sources */,
 			);
