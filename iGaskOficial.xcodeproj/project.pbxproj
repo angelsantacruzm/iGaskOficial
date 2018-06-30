@@ -32,6 +32,7 @@
 		A4614A4620E6425D005EC6E0 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4520E6425D005EC6E0 /* SearchCell.swift */; };
 		A4614A4A20E6570C005EC6E0 /* SearchSupplierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4920E6570C005EC6E0 /* SearchSupplierViewController.swift */; };
 		A4614A4C20E67AB2005EC6E0 /* SupplierDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */; };
+		A4614A5020E70B90005EC6E0 /* MapLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */; };
 		A46BCB7320E1E6BB00C8E0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46BCB7220E1E6BB00C8E0E5 /* AppDelegate.swift */; };
 		A46BCB7820E1E6BB00C8E0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46BCB7620E1E6BB00C8E0E5 /* Main.storyboard */; };
 		A46BCB7A20E1E6BB00C8E0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46BCB7920E1E6BB00C8E0E5 /* Assets.xcassets */; };
@@ -86,6 +87,8 @@
 		A4614A4520E6425D005EC6E0 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A4614A4920E6570C005EC6E0 /* SearchSupplierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSupplierViewController.swift; sourceTree = "<group>"; };
 		A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupplierDetailViewController.swift; sourceTree = "<group>"; };
+		A4614A4E20E6FD3D005EC6E0 /* iGaskOficial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iGaskOficial.entitlements; sourceTree = "<group>"; };
+		A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocationViewController.swift; sourceTree = "<group>"; };
 		A46BCB6F20E1E6BB00C8E0E5 /* iGaskOficial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGaskOficial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BCB7220E1E6BB00C8E0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46BCB7720E1E6BB00C8E0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 				A4614A4520E6425D005EC6E0 /* SearchCell.swift */,
 				A4614A4920E6570C005EC6E0 /* SearchSupplierViewController.swift */,
 				A4614A4B20E67AB1005EC6E0 /* SupplierDetailViewController.swift */,
+				A4614A4F20E70B90005EC6E0 /* MapLocationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +196,7 @@
 		A46BCB7120E1E6BB00C8E0E5 /* iGaskOficial */ = {
 			isa = PBXGroup;
 			children = (
+				A4614A4E20E6FD3D005EC6E0 /* iGaskOficial.entitlements */,
 				A4614A1E20E1FC54005EC6E0 /* SessionManager */,
 				A4614A1B20E1F7EE005EC6E0 /* Controller */,
 				A46BCBA520E1EB4F00C8E0E5 /* Model */,
@@ -275,6 +280,7 @@
 				A46BCB6C20E1E6BB00C8E0E5 /* Frameworks */,
 				A46BCB6D20E1E6BB00C8E0E5 /* Resources */,
 				63D822C8ED994DFA30C270BF /* [CP] Embed Pods Frameworks */,
+				8926EC84405166A40449CC5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,6 +341,11 @@
 				TargetAttributes = {
 					A46BCB6E20E1E6BB00C8E0E5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 					A46BCB8220E1E6BB00C8E0E5 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -439,6 +450,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8926EC84405166A40449CC5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iGaskOficial/Pods-iGaskOficial-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iGaskOficial/Pods-iGaskOficial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B76826EF5EDC24967CC04F02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +527,7 @@
 				A4614A2820E2D4EA005EC6E0 /* ProductModel.swift in Sources */,
 				A4614A2020E1FCC6005EC6E0 /* SessionManager.swift in Sources */,
 				A4614A4A20E6570C005EC6E0 /* SearchSupplierViewController.swift in Sources */,
+				A4614A5020E70B90005EC6E0 /* MapLocationViewController.swift in Sources */,
 				A4614A1A20E1F2C8005EC6E0 /* SupplierRepository.swift in Sources */,
 				A4614A2420E2CD52005EC6E0 /* SalesRepository.swift in Sources */,
 				A4614A3020E2ECE7005EC6E0 /* OrderRepository.swift in Sources */,
@@ -678,7 +708,9 @@
 			baseConfigurationReference = 5A3DCCC08E004AFA2B6903FB /* Pods-iGaskOficial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iGaskOficial/iGaskOficial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28YZFGW6QX;
 				INFOPLIST_FILE = iGaskOficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -696,7 +728,9 @@
 			baseConfigurationReference = 90BA3E721D20FDA650BAB77F /* Pods-iGaskOficial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iGaskOficial/iGaskOficial.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28YZFGW6QX;
 				INFOPLIST_FILE = iGaskOficial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

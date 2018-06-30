@@ -51,6 +51,8 @@ class SearchSupplierViewController: UIViewController, UITableViewDelegate, UITab
                 supplier.name = dictionary["name"] as! String
                 supplier.description = dictionary["description"] as! String
                 supplier.phone = dictionary["phone"] as! String
+                supplier.latitude = dictionary["latitude"] as! String
+                supplier.longitude = dictionary["longitude"] as! String
                 self.supplierDataAux.append(supplier)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
@@ -93,6 +95,9 @@ class SearchSupplierViewController: UIViewController, UITableViewDelegate, UITab
             guest.name = categoryselected.name
             guest.Description = categoryselected.description
             guest.Phone = categoryselected.phone
+            guest.latitudeMap = categoryselected.latitude
+            guest.longitudeMap = categoryselected.longitude
+            
         }
     }
 

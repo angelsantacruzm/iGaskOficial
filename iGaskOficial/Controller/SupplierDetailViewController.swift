@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMaps
 
 class SupplierDetailViewController: UIViewController {
     
@@ -22,15 +23,16 @@ class SupplierDetailViewController: UIViewController {
     var name = String()
     var Description = String()
     var Phone = String()
+    var latitudeMap = String()
+    var longitudeMap = String()
     @IBOutlet weak var nameTxtLabel: UILabel!
     @IBOutlet weak var descriptionTxtLabel: UITextView!
     @IBOutlet weak var phoneTxtLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         load()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,7 +46,11 @@ class SupplierDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let guest = segue.destination as! MapLocationViewController
+        guest.latitudeMapLoc = latitudeMap
+        guest.longitudMapLoc = longitudeMap
+    }
     
 
     /*
